@@ -19,7 +19,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-	  path: ./dist
+          path: ./dist
 
   deploy:
     needs: build
@@ -30,4 +30,4 @@ jobs:
     steps:
       - name: Deploy to Github Pages
         id: deployment
-	uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4
